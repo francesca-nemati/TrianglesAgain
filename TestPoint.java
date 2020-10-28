@@ -15,5 +15,9 @@ public class TestPoint {
     System.out.println("Point 3 X coordinate: " + point3.getX());
     System.out.println("Point 3 Y coordinate: " + point3.getY());
     System.out.println();
+
+    System.out.println("Distance between points 1 and 2: " + point1.distanceTo(point2));
+    System.out.println("Distance between points 1 and 3: " + point1.distanceTo(point3));
+    System.out.println("Distance between points 2 and 3: " + point2.distanceTo(point3));
   }
 }
