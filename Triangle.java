@@ -41,8 +41,23 @@ public class Triangle {
     return "scalene";
   }
 
-  // public String toString() {
-  //
-  // }
+  public String toString() {
+    double X1 = v1.getX();
+    double X2 = v2.getX();
+    double X3 = v3.getX();
+
+    double Y1 = v1.getY();
+    double Y2 = v2.getY();
+    double Y3 = v3.getY();
+
+    String s = "v1(" + X1 + ", " + Y1 + ") v2(" + X2 + ", " + Y2 + ") v3(" + X3 + ", " + Y3 + ")";
+    return s;
+  }
+
+  public void setVertex(int index, Point newP) {
+    if (index == 0) v1 = newP;
+    if (index == 1) v2 = newP;
+    if (index == 2) v3 = newP;
+  }
 
 }
