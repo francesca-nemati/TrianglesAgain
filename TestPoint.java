@@ -3,6 +3,7 @@ public class TestPoint {
     Point point1 = new Point(0,0);
     Point point2 = new Point(5,7);
     Point point3 = new Point(-2,8);
+    Point point4 = new Point(point1);
 
     System.out.println("Point 1 X coordinate: " + point1.getX());
     System.out.println("Point 1 Y coordinate: " + point1.getY());
@@ -19,5 +20,10 @@ public class TestPoint {
     System.out.println("Distance between points 1 and 2: " + point1.distanceTo(point2));
     System.out.println("Distance between points 1 and 3: " + point1.distanceTo(point3));
     System.out.println("Distance between points 2 and 3: " + point2.distanceTo(point3));
+    System.out.println();
+
+    System.out.println("Same point? - Points 1 and 2: " + point1.equals(point2));
+    System.out.println("Same point? - Points 1 and 3: " + point1.equals(point3));
+    System.out.println("Same point? - Points 1 and 4: " + point1.equals(point4));
   }
 }

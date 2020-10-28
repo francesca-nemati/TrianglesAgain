@@ -29,4 +29,9 @@ public class Point {
     return distance;
   }
 
+  public boolean equals(Point other) {
+    if (x == other.getX() && y == other.getY()) return true;
+    else return false;
+  }
+
 }
