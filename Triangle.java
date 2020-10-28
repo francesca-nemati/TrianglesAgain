@@ -32,10 +32,15 @@ public class Triangle {
     return heron;
   }
 
-  // public String classify() {
-  //
-  // }
-  //
+  public String classify() {
+    double s1 = Math.round(v1.distanceTo(v2) * 10000.0) / 10000.0;
+    double s2 = Math.round(v2.distanceTo(v3) * 10000.0) / 10000.0;
+    double s3 = Math.round(v3.distanceTo(v1) * 10000.0) / 10000.0;
+    if ((s1 == s2) && (s1 == s3)) return "equilateral";
+    if ((s1 == s2) || (s1 == s3) || (s2 == s3)) return "isosceles";
+    return "scalene";
+  }
+
   // public String toString() {
   //
   // }
