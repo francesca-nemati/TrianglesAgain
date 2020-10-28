@@ -23,10 +23,15 @@ public class Triangle {
     return s1 + s2 + s3;
   }
 
-  // public double getArea() {
-  //
-  // }
-  //
+  public double getArea() {
+    double s1 = v1.distanceTo(v2);
+    double s2 = v2.distanceTo(v3);
+    double s3 = v3.distanceTo(v1);
+    double a = getPerimeter() / 2;
+    double heron = (Math.sqrt((a * (a - s1) * (a - s2) * (a - s3))));
+    return heron;
+  }
+
   // public String classify() {
   //
   // }
