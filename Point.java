@@ -30,7 +30,7 @@ public class Point {
   }
 
   public boolean equals(Point other) {
-    if (x == other.getX() && y == other.getY()) return true;
+    if (other != null & x == other.getX() && y == other.getY()) return true;
     else return false;
   }
 
